@@ -1,0 +1,331 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#myBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius:  100px 100px  5px 5px;
+    cursor: pointer;
+}
+#myBtn:hover{
+    background-color: palevioletred;
+}
+.header{
+    width: 100%;
+    height: 30px;
+    background-color: black;
+}
+.container-header{
+    width: 80%;
+    height: 30px;
+    margin: 0 auto;
+}
+.header-ul{
+    display: flex;
+    list-style-type: none;
+}
+.header-li{
+    width: 25%;
+    color: white;
+    text-align: center;
+    padding-top: 4px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    border-right: 1px solid #464444;
+}
+
+/*------------------------------------------*/
+.header-bot{
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+}
+.container-header-bot{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+.box-header-bot{
+    width: 33.33%;
+    height: 80px;
+    margin-right: 50px;
+    display: flex;
+}
+.box-header-bot .search{
+    width: 80%;
+    height: 80px;
+}
+.box-header-bot .search input{
+    width: 100%;
+    height: 70%;
+    margin-top: 4.5%;
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    padding: 0.5em 1em;
+}
+.box-header-bot .icon-search{
+    width: 20%;
+    position: relative;
+}
+.box-header-bot .icon-search .fas{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #2fdab8;
+    top: 14%;
+    left: 30%;
+}
+.box-header-bot .E-left{
+    width: 20%;
+    height: 80px;
+    background-color: black;
+    position: relative;
+}
+.box-header-bot .E-left span{
+    position: absolute;
+    font-size: 3.5em;
+    color: white;
+    text-align: center;
+    top: 7%;
+    left: 28%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+.box-header-bot .E-right{
+    width: 80%;
+    height: 80px;
+    position: relative;
+}
+.box-header-bot .E-right span{
+    position: absolute;
+    font-size: 40px;;
+    top: 17%;
+    left: 0%;
+}
+.box-header-bot .share-left{
+    width: 32%;
+    height: 80px;
+    position: relative;
+}
+.box-header-bot .share-left span{
+    position: absolute;
+    top: 46%;
+    left: 8%;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box-header-bot .share-right{
+    width: 68%;
+    height: 80px;
+    display: flex;
+}
+.box-header-bot .share-right .icon-share{
+    width: 25%;
+    height: 60px;
+    margin: 10px;
+    position: relative;
+}
+.icon-share:hover{
+    transform: rotateX(360deg);
+    background-color: white;
+    transition: 0.7s;
+}
+.box-header-bot .share-right .icon-share i{
+    font-size: 26px;
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    cursor: pointer;
+}
+/*---------------------NAV---------------------*/
+.nav{
+    width: 100%;
+    background-color: black;
+}
+.container-nav{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+.container-nav .nav-left{
+    width:85%;
+    /* position: relative; */
+}
+.container-nav .nav-left .nav-left-ul{
+    display: flex;
+    list-style-type: none;
+    font-size: 15px;
+    letter-spacing: 2px;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 11%;
+    left: 5%;
+}
+.container-nav .nav-left .nav-left-ul .hover-botton{
+    padding: 29px;
+    margin-right: 2px;
+    border-bottom:none;
+    position: relative;
+}
+.men-ul{
+    width: 170px;
+    color: black;
+    list-style-type: none;
+    position: absolute;
+    z-index: 5;
+    background-color: white;
+    top: 105%;
+    left:0%;
+    display: none;
+    border-radius: 2px;
+}
+.border-w3{
+    width: 100%;
+    height: 5px;
+    background-color: #2fdab8;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    display: none;
+}
+.hover-botton:hover .border-w3{
+    display: block;
+    animation: luotngang 0.5s 1;
+}
+@keyframes luotngang{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+.men-ul a{
+    color: black;
+}
+.hover-botton:hover .men-ul{
+    display: block;
+    animation: hieuungluot 2s 1;
+}
+
+@keyframes hieuungluot{
+    from{
+        max-height: 0;
+        overflow: hidden;
+    }
+    to{
+        max-height: 100vh;
+        overflow: hidden;
+    }
+}
+.men-li{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 8px;
+    padding: 7px;
+    cursor: pointer;
+}
+.men-li:hover{
+    background-color: lightcoral;
+}
+.container-nav .nav-right{
+    width: 15%;
+    background-color: #2fdab8;
+    padding: 25px;
+}
+.container-nav .nav-right .icon-nav-right{
+    width: 45px;
+    height: 40px;
+    background-color: #16836df3;
+    margin: 0 auto;
+    position: relative;
+}
+.container-nav .nav-right .icon-nav-right .fa-cart-arrow-down{
+    font-size: 18px;
+    position: absolute;
+    top: 31%;
+    left: 26%;    
+    cursor: pointer;
+}
+
+/*--------------About-Us-------*/
+.about-us{
+    width: 100%;
+    height: 250px;
+    position: relative;
+}
+.about-us img{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+.about-us .title-top-about{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 38%;
+    left: 39%;
+}
+.about-us .title-top-about span{
+    font-weight: 300;
+}
+.about-us .nav-about{
+    position: absolute;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    display: flex;
+    top: 76%;
+    left: 10%;
+}
+.about-us .nav-about .nav-about-1{
+    font-size: 0.9em;
+    color: #fff;
+    letter-spacing: 1px;
+    padding-left: 15px;
+}
+
+/*---------------Container----------------*/
+.single-bottom{
+    width: 100%;
+    height: 1000px;
+    background-color: gray;
+    display: flex;
+}
+
+.single-bottom .container{
+    width: 90%;
+    height: 600px;
+    background-color: lightsteelblue;
+    position: relative;
+    margin: 0 auto;
+}
+.single-bottom .container .container-top-left{
+
+}
+.single-bottom .container .container-top-left{
+
+}

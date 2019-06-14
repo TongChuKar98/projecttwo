@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SVG-Stroke Dasharray & Dashoffset</title>
+    <link rel="shortcut icon" href="../image/logo kmin/logo.png">
+</head>
+<style type="text/css">
+    body {
+        background-color: black;
+    }
+
+    .container{
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 38%;
+        left: 42%;
+        transform: translate(-50%, -50%;)
+    }
+
+    #vong1 {
+        stroke: lightblue;
+        stroke-width: 4px;
+        fill: transparent;
+        transition: 1s;
+        animation: animatevong1 ease-out 1s infinite forwards alternate;
+    }
+
+    #vong2 {
+        stroke: lightblue;
+        stroke-width: 4px;
+        fill: transparent;
+        stroke-dasharray: calc(3.14 * 20% / 4);
+        transition: 1s;
+        animation: animatevong2 ease-out 1s infinite forwards alternate;
+    }
+
+    #vong3 {
+        stroke: lightblue;
+        stroke-width: 4px;
+        fill: transparent;
+        stroke-dasharray: calc(3.14 * 35% / 4);
+        transition: 1s;
+        animation: animatevong3 ease-out 1s infinite forwards alternate;
+    }
+
+    @keyframes animatevong1 {
+        form {
+            stroke: lightblue;
+        }
+
+        to {
+            stroke: greenyellow;
+        }
+    }
+
+    @keyframes animatevong2 {
+        form {
+            stroke-dashoffset: 0;
+            stroke: lightblue;
+        }
+
+        to {
+            stroke-dashoffset: 100%;
+            stroke: greenyellow;
+        }
+    }
+
+    @keyframes animatevong3 {
+        form {
+            stroke-dashoffset: 0;
+            stroke: lightblue;
+        }
+
+        to {
+            stroke-dashoffset: 200%;
+            stroke: greenyellow;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <svg class="button" expanded="true" height="200px" width="200px">
+            <circle id="vong1" class="animevong1" cx="50%" cy="50%" r="25%" />
+            <circle id="vong2" class="animevong2" cx="50%" cy="50%" r="35%" />
+            <circle id="vong3" class="animevong3" cx="50%" cy="50%" r="45%" />
+        </svg>
+    </div>
+    <script>
+window.setTimeout(function() {
+window.location.href = "2-SVG.html";
+}, 6000);
+</script>
+
+    <circle />
+
+
+</body>
+
+</html>

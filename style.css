@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background: linear-gradient(#e66465, #9198e5);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*-------------*/
+
+.bootstrap-top{
+    margin-top: 10%;
+    padding-left: 18%;
+}
+.bootstrap-top span{
+    border: 1px solid #fff;
+    padding: 20px;
+    border-radius: 40px;
+    background:#fff;
+}
+.bootstrap-essay{
+    margin-top: 10%;
+}

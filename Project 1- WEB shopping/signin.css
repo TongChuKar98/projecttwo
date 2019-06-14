@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/*------------------------*/
+
+.head{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+}
+.gohome{
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 17%;
+    opacity: 0.98;
+    text-align: center;
+    color: #fff;
+    padding-top:27px;
+    font-size: 25px;
+}
+.gohome:hover{
+    background-color: #2fda2f;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.container-signin{
+    width: 50%;
+    height: 670px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 99;
+    top: 24%;
+    left: 24%;
+    border-radius: 3px;
+    opacity: 0.98;
+}
+.title-signin{
+    font-size: 2.5em;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    color: rgb(112, 108, 108);
+    margin-top : 30px;
+    margin-left: 200px;
+    opacity: 1;
+}
+.title-signin span{
+    color: gray;
+    font-weight: 300;
+}
+.sign-box-1{
+    width: 70%;
+    height: 51px;
+    position: absolute;
+    top: 16%;
+    left: 16%;
+    display: flex;
+}
+.sign-box-1-left{
+    width: 15%;
+    height: 100%;
+    font-size: 25px;
+    padding-left: 22px;
+    padding-top: 10px;
+    border: 2px solid gray;
+    color: rgb(124, 124, 124);
+    border-radius: 3px;
+    background-color: rgba(212, 212, 212, 0.418);
+}
+.sign-box-1-right{
+    width: 85%;
+    height: 100%;
+    font-size: 20px;
+    padding-left: 0.5em;
+    letter-spacing: 1px;
+}
+.sign-box-2{
+    width: 70%;
+    height: 51px;
+    position: absolute;
+    top: 28%;
+    left: 16%;
+    display: flex;
+}
+.check-box-signin{
+    position: absolute;
+    top: 40%;
+    left: 16%;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+.pass-check-signin{
+    position: absolute;
+    top: 40%;
+    left: 67%;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+.pass-check-signin:hover{
+    cursor: pointer;
+    color: rgba(22, 228, 228, 0.829);
+
+}
+.submit-signin input{
+    position: absolute;
+    top: 47%;
+    left: 21%;
+    width: 60%;
+    height: 40px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding-top: 4px;
+    cursor: pointer;
+}
+.bottom-option-signin{
+    position: absolute;
+    top: 57%;
+    left: 39%;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+.icon-bottom-signin{
+    width: 70%;
+    height: 45px;
+    position: absolute;
+    top: 63%;
+    left: 16%;
+    display: flex;
+}
+.icon-bottom-signin .icon-detail-bottom-signin{
+    width: 33.33%;
+    height: 100%;
+    margin: 0 20px;
+    font-size: 28px;
+    text-align: center;
+    padding-top: 7px;
+    border: 1px solid gray;
+    cursor: pointer;
+    font-weight: 700;
+}
+.icon-detail-bottom-signin:hover .facebook-signin{
+    color: #fff;
+}
+.icon-detail-bottom-signin:hover{
+    background-color: #3B5998; 
+}
+.icon-detail-bottom-signin:hover .twitter-signin{
+    color: #fff;
+}
+.icon-detail-bottom-signin:hover{
+    background-color: #55ACEE; 
+}
+.icon-detail-bottom-signin:hover .google-plus{
+    color: #fff;
+}
+.icon-detail-bottom-signin:hover{
+    background-color: orangered; 
+}
+.question-user-signin{
+    position: absolute;
+    top: 75%;
+    left: 38%;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+.signin-up{
+    width: 70%;
+    height: 45px;
+    background-color: orange;
+    color: #fff;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-align: center;
+    position: absolute;
+    top: 82%;
+    left: 17%;
+    padding-top: 13px;
+    cursor: pointer;
+}
+.signin-up:hover{
+    background-color: orangered;
+}
+
+
